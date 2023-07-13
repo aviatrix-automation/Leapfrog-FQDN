@@ -3,7 +3,7 @@ resource "aviatrix_gateway" "gateway_10" {
     gw_name = "FQDN-EGRESS-GATEWAY-1"
     azure_eip_name_resource_group ="FQDNTESTPUBLICIP:rg-av-EH-Transit-399173"
     allocate_new_eip =false
-    eip = "20.232.101.111"
+    eip = "52.165.164.121"
     vpc_id = "EH-Transit:rg-av-EH-Transit-399173:7e303da3-2c8b-4884-9e12-d348a50dd7b1"
     cloud_type = 8
     vpc_reg = "East US"
@@ -18,7 +18,7 @@ resource "aviatrix_gateway" "gateway_11" {
     gw_name = "FQDN-EGRESS-GATEWAY-2"
     azure_eip_name_resource_group ="FQDNTESTPUBLICIP-1:rg-av-EH-Transit-399173"
     allocate_new_eip =false
-    eip = "20.241.249.193"
+    eip = "104.43.212.92"
     vpc_id = "EH-Transit:rg-av-EH-Transit-399173:7e303da3-2c8b-4884-9e12-d348a50dd7b1"
     cloud_type = 8
     vpc_reg = "East US"
