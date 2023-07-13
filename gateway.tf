@@ -1,6 +1,6 @@
-resource "aviatrix_gateway" "gateway_3" {
+resource "aviatrix_gateway" "gateway_10" {
     single_az_ha = true
-    gw_name = "FQDN-GATEWAY-REAL"
+    gw_name = "FQDN-EGRESS-GATEWAY-1"
     azure_eip_name_resource_group ="FQDNTESTPUBLICIP:rg-av-EH-Transit-399173"
     allocate_new_eip =false
     eip = "20.232.101.111"
@@ -13,9 +13,9 @@ resource "aviatrix_gateway" "gateway_3" {
     fqdn_lan_cidr = "10.10.66.80/28"
 }
 
-resource "aviatrix_gateway" "gateway_4" {
+resource "aviatrix_gateway" "gateway_11" {
     single_az_ha = true
-    gw_name = "FQDN-GATEWAY-REAL-2"
+    gw_name = "FQDN-EGRESS-GATEWAY-2"
     azure_eip_name_resource_group ="FQDNTESTPUBLICIP-1:rg-av-EH-Transit-399173"
     allocate_new_eip =false
     eip = "20.241.249.193"
